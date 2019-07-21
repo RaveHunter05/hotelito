@@ -53,6 +53,12 @@ descripcion_mue varchar(80) default null,
 precio_mue float not null
 );
 
+create table habitacion_mueble(
+id_mue int primary key not null,
+id_hab char(3) not null,
+foreign key (id_hab) references habitacion(id_hab)
+);
+
 create table servicio(
 id_ser int primary key not null auto_increment,
 nombre_ser varchar(20) not null,
@@ -110,10 +116,12 @@ total_fact float
 create table servicios_contratados(
 id_fact int not null,
 id_ser int not null,
+id_hab char(3) not null,
 cantidad int,
 subtotal float,
 foreign key (id_fact) references factura(id_fact),
-foreign key (id_ser) references servicios(id_ser)
+foreign key (id_ser) references servicios(id_ser),
+foreign key (id_hab) references habitacion(id_hab)
 );
 
 create table danos(
