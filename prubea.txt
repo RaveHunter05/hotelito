@@ -2,6 +2,4 @@ esto es una prueba para probar git
 
 otra linea de prueba
 
-otra linea de prueba... de nuevo
 
-otra prueba we ahora si la ultima
