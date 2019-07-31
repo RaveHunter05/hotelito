@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07-30-2019 10:53:13 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Evento" table="evento" catalog="hotelito" optimistic-lock="version">
+        <id name="idEven" type="int">
+            <column name="id_even" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="cliente" class="POJO.Cliente" fetch="select">
+            <column name="id_cli" not-null="true" />
+        </many-to-one>
+        <many-to-one name="salon" class="POJO.Salon" fetch="select">
+            <column name="id_salon" not-null="true" />
+        </many-to-one>
+        <property name="fechaEven" type="date">
+            <column name="fecha_even" length="10" not-null="true" />
+        </property>
+        <property name="cantidadPersonas" type="java.lang.Integer">
+            <column name="cantidad_personas" />
+        </property>
+        <property name="horaInicio" type="time">
+            <column name="hora_inicio" length="8" />
+        </property>
+        <property name="horaFin" type="time">
+            <column name="hora_fin" length="8" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" length="20" />
+        </property>
+        <property name="costoServicios" type="java.lang.Float">
+            <column name="costo_servicios" precision="12" scale="0" />
+        </property>
+        <property name="subtotal" type="java.lang.Float">
+            <column name="subtotal" precision="12" scale="0" />
+        </property>
+        <property name="total" type="java.lang.Float">
+            <column name="total" precision="12" scale="0" />
+        </property>
+        <set name="pagoEventos" table="pago_evento" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_even" not-null="true" />
+            </key>
+            <one-to-many class="POJO.PagoEvento" />
+        </set>
+        <set name="eventoServicioses" table="evento_servicios" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_even" not-null="true" />
+            </key>
+            <one-to-many class="POJO.EventoServicios" />
+        </set>
+    </class>
+</hibernate-mapping>
