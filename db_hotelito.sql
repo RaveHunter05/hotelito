@@ -35,7 +35,7 @@ id_user int primary key not null auto_increment,
 id_emp int not null,
 username_user varchar(50) not null,
 password_user varchar(15) not null,
-foreign key (id_emp) references empleados(id_emp)
+foreign key (id_emp) references empleado(id_emp)
 );
 
 create table habitacion(
@@ -45,7 +45,7 @@ tipo_hab varchar(20) not null,
 descripcion_hab varchar(50) default null,
 capacidad_hab int default null,
 precio_hab float default null,
-estado_hab boolean default "true"
+estado_hab varchar(15)
 );
 
 create table mueble(
@@ -53,13 +53,14 @@ id_mue int primary key not null auto_increment,
 nombre_mue varchar(50) default null,
 descripcion_mue varchar(80) default null,
 precio_mue float not null,
-id_hab char(3) not null,
+id_hab int not null,
 foreign key (id_hab) references habitacion(id_hab)
 );
 
 create table servicio(
 id_ser int primary key not null auto_increment,
 nombre_ser varchar(20) not null,
+tipo_ser varchar(20) default null,
 descripcion_ser varchar(80) default null,
 precio_ser float default null
 );
@@ -73,7 +74,7 @@ cantidad_hab int,
 cantidad_personas int,
 estado varchar(20),
 total_res float,
-foreign key (id_cli) references clientes(id_cli)
+foreign key (id_cli) references cliente(id_cli)
 );
 
 create table reservacion_huesped(
@@ -86,7 +87,7 @@ primary key (id_res, id_cli)
 
 create table reservacion_habitaciones(
 id_res int not null,
-id_hab char(3) not null,
+id_hab int not null,
 subtotal float,
 foreign key (id_res) references reservacion(id_res),
 foreign key (id_hab) references habitacion(id_hab),
@@ -113,24 +114,24 @@ total_fact float
 );
 
 create table servicios_contratados(
-id_fact int not null,
+num_fact char(10) not null,
 id_ser int not null,
-id_hab char(3) not null,
+id_hab int not null,
 cantidad int,
 subtotal float,
-foreign key (id_fact) references factura(id_fact),
-foreign key (id_ser) references servicios(id_ser),
+foreign key (num_fact) references factura(num_fact),
+foreign key (id_ser) references servicio(id_ser),
 foreign key (id_hab) references habitacion(id_hab),
-primary key (id_fact, id_ser)
+primary key (num_fact, id_ser)
 );
 
 create table danos(
-id_fact int not null,
+num_fact char(10) not null,
 id_mue int not null,
 subtotal float,
-foreign key (id_fact) references factura(id_fact),
-foreign key (id_mue) references muebles(id_mue),
-primary key (id_fact, id_mue)
+foreign key (num_fact) references factura(num_fact),
+foreign key (id_mue) references mueble(id_mue),
+primary key (num_fact, id_mue)
 );
 
 create table salon(
@@ -170,7 +171,7 @@ id_even int not null,
 id_ser int not null,
 subtotal float,
 foreign key (id_even) references evento(id_even),
-foreign key (id_ser) references servicios(id_ser),
+foreign key (id_ser) references servicio(id_ser),
 primary key (id_even, id_ser)
 );
 
