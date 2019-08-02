@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="hotelito"/>
+  <table-filter match-name="reservacion_huesped"/>
+  <table-filter match-name="reservacion_habitaciones"/>
+  <table-filter match-name="empleado"/>
+  <table-filter match-name="mueble"/>
+  <table-filter match-name="pago_reservacion"/>
+  <table-filter match-name="insumo"/>
+  <table-filter match-name="habitacion"/>
+  <table-filter match-name="danos"/>
+  <table-filter match-name="pago_evento"/>
+  <table-filter match-name="factura"/>
+  <table-filter match-name="cliente"/>
+  <table-filter match-name="proveedor"/>
+  <table-filter match-name="servicio"/>
+  <table-filter match-name="reservacion"/>
+  <table-filter match-name="salon"/>
+  <table-filter match-name="servicios_contratados"/>
+  <table-filter match-name="evento_servicios"/>
+  <table-filter match-name="evento"/>
+  <table-filter match-name="usuario"/>
+</hibernate-reverse-engineering>
