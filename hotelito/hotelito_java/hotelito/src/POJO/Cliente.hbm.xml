@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-01-2019 03:43:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Cliente" table="cliente" catalog="hotelito" optimistic-lock="version">
+        <id name="idCli" type="java.lang.Integer">
+            <column name="id_cli" />
+            <generator class="identity" />
+        </id>
+        <property name="cedulaCli" type="string">
+            <column name="cedula_cli" length="16" />
+        </property>
+        <property name="prinombreCli" type="string">
+            <column name="prinombre_cli" length="50" not-null="true" />
+        </property>
+        <property name="segnombreCli" type="string">
+            <column name="segnombre_cli" length="50" />
+        </property>
+        <property name="priapellidoCli" type="string">
+            <column name="priapellido_cli" length="50" not-null="true" />
+        </property>
+        <property name="segapellidoCli" type="string">
+            <column name="segapellido_cli" length="50" />
+        </property>
+        <property name="edadCli" type="int">
+            <column name="edad_cli" not-null="true" />
+        </property>
+        <property name="telefonoCli" type="string">
+            <column name="telefono_cli" length="15" />
+        </property>
+        <property name="emailCli" type="string">
+            <column name="email_cli" length="80" />
+        </property>
+        <property name="tituloCli" type="string">
+            <column name="titulo_cli" length="20" />
+        </property>
+        <set name="reservacions" table="reservacion_huesped" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_cli" not-null="true" />
+            </key>
+            <many-to-many entity-name="POJO.Reservacion">
+                <column name="id_res" not-null="true" />
+            </many-to-many>
+        </set>
+        <set name="eventos" table="evento" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_cli" not-null="true" />
+            </key>
+            <one-to-many class="POJO.Evento" />
+        </set>
+        <set name="reservacions_1" table="reservacion" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_cli" not-null="true" />
+            </key>
+            <one-to-many class="POJO.Reservacion" />
+        </set>
+    </class>
+</hibernate-mapping>
