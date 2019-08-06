@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-01-2019 03:43:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Factura" table="factura" catalog="hotelito" optimistic-lock="version">
+        <id name="numFact" type="string">
+            <column name="num_fact" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="idCli" type="int">
+            <column name="id_cli" not-null="true" />
+        </property>
+        <property name="fecha" type="date">
+            <column name="fecha" length="10" />
+        </property>
+        <property name="formaPago" type="string">
+            <column name="forma_pago" length="20" />
+        </property>
+        <property name="costoServicios" type="java.lang.Float">
+            <column name="costo_servicios" precision="12" scale="0" />
+        </property>
+        <property name="costoDanos" type="java.lang.Float">
+            <column name="costo_danos" precision="12" scale="0" />
+        </property>
+        <property name="subtototal" type="java.lang.Float">
+            <column name="subtototal" precision="12" scale="0" />
+        </property>
+        <property name="totalFact" type="java.lang.Float">
+            <column name="total_fact" precision="12" scale="0" />
+        </property>
+        <set name="danoses" table="danos" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="num_fact" length="10" not-null="true" />
+            </key>
+            <one-to-many class="POJO.Danos" />
+        </set>
+        <set name="serviciosContratadoses" table="servicios_contratados" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="num_fact" length="10" not-null="true" />
+            </key>
+            <one-to-many class="POJO.ServiciosContratados" />
+        </set>
+    </class>
+</hibernate-mapping>
