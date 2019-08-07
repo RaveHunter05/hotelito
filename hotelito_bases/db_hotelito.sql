@@ -12,7 +12,9 @@ segapellido_cli varchar(50) default null,
 edad_cli int not null,
 telefono_cli varchar(15) default null,
 email_cli varchar(80) default null,
-titulo_cli varchar(20) default null
+titulo_cli varchar(20) default null,
+tipo_cli varchar(30) default null,
+estado_cli varchar(15) default null
 );
 
 create table empleado(
@@ -27,7 +29,8 @@ nacimiento_emp date not null,
 telefono_emp varchar(15) not null,
 email_emp varchar(80) not null,
 cargo_emp varchar(50) not null,
-sueldo_emp float default null
+sueldo_emp float default null,
+estado_emp varchar(15) default null
 );
 
 create table usuario(
@@ -35,7 +38,8 @@ id_user int primary key not null auto_increment,
 id_emp int not null,
 username_user varchar(50) not null,
 password_user varchar(15) not null,
-foreign key (id_emp) references empleado(id_emp)
+foreign key (id_emp) references empleado(id_emp),
+estado_user varchar(15) default null
 );
 
 create table habitacion(
@@ -62,7 +66,8 @@ id_ser int primary key not null auto_increment,
 nombre_ser varchar(20) not null,
 tipo_ser varchar(20) default null,
 descripcion_ser varchar(80) default null,
-precio_ser float default null
+precio_ser float default null, 
+estado_ser varchar(15) default null
 );
 
 create table reservacion(
@@ -139,7 +144,8 @@ id_salon int primary key not null auto_increment,
 nombre_salon varchar(50),
 costo float,
 capacidad int,
-descripcion_salon varchar(100)
+descripcion_salon varchar(100),
+estado_salon varchar(15) default null
 );
 
 create table evento(
@@ -150,7 +156,7 @@ fecha_even date not null,
 cantidad_personas int,
 hora_inicio time,
 hora_fin time,
-estado varchar(20),
+estado_even varchar(20),
 costo_servicios float,
 subtotal float,
 total float,
