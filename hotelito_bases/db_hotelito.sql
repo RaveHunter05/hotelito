@@ -164,14 +164,6 @@ foreign key (id_cli) references cliente(id_cli),
 foreign key (id_salon) references salon(id_salon)
 );
 
-create table evento_participantes(
-id_even int not null,
-id_cli int not null,
-tipo_participante varchar(20),
-foreign key (id_cli) references cliente(id_cli),
-foreign key (id_even) references evento(id_even)
-);
-
 create table evento_servicios(
 id_even int not null,
 id_ser int not null,
