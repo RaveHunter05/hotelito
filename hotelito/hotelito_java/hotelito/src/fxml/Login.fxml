@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="todo" prefHeight="850.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.LoginController">
+    <stylesheets>
+        <URL value="@/css/login.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="log" layoutX="407.0" layoutY="155.0" prefHeight="517.0" prefWidth="500.0" stylesheets="@../css/login.css">
+         <children>
+            <Label id="titulo" layoutX="120.0" layoutY="66.0" text="BIENVENIDO A HOTELITO!">
+               <font>
+                  <Font name="Bookman Old Style" size="96.0" />
+               </font></Label>
+            <Button id="button" fx:id="button" layoutX="186.0" layoutY="356.0" mnemonicParsing="false" onAction="#entrar" prefHeight="33.0" prefWidth="84.0" text="ENTRAR" />
+            <TextField id="input" fx:id="email" layoutX="152.0" layoutY="190.0" onKeyPressed="#keypress" promptText="Email" />
+            <PasswordField id="input" fx:id="password" layoutX="152.0" layoutY="259.0" onKeyPressed="#keypress2" promptText="Password" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -15,6 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -25,15 +26,23 @@ public class Hotelito extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         
-        Parent root=FXMLLoader.load(getClass().getResource("ASDF.fxml"));
-        
-        
-        
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Login.fxml"));
         Scene scene = new Scene(root);
-        
-        primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
+        primaryStage.setMaximized(true);
+        primaryStage.initStyle(StageStyle.UNDECORATED);
+        //para no ver titulos ni nada alv
         primaryStage.show();
+
+//        Parent root=FXMLLoader.load(getClass().getResource("/fxml/Login.fxml"));
+//        
+//        
+//        
+//        Scene scene = new Scene(root);
+//        
+//        primaryStage.setTitle("Hello World!");
+//        primaryStage.setScene(scene);
+//        primaryStage.show();
     }
 
     /**
