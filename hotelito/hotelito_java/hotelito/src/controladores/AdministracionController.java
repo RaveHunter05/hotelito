@@ -7,7 +7,13 @@ package controladores;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -16,6 +22,19 @@ import javafx.fxml.Initializable;
  */
 public class AdministracionController implements Initializable {
 
+    @FXML
+    private Button btnEditar;
+    @FXML
+    private ComboBox<?> cmbBusqueda;
+    @FXML
+    private TextField txtBusqueda;
+    @FXML
+    private Button btnBusqueda;
+    @FXML
+    private TableView<?> txtView;
+    
+    
+    
     /**
      * Initializes the controller class.
      */
@@ -23,5 +42,13 @@ public class AdministracionController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void btnEditar(ActionEvent event) {
+    }
+
+    @FXML
+    private void btnBusqueda(ActionEvent event) {
+    }
     
 }
