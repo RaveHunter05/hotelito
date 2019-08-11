@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.ServiciosController">
+<AnchorPane id="AnchorPane" prefHeight="777.0" prefWidth="1028.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="controladores.ServiciosController">
     <stylesheets>
-        <URL value="@/css/servicios.css"/>
+        <URL value="@/css/servicios.css" />
     </stylesheets>
+   <children>
+      <Label layoutX="490.0" layoutY="40.0" text="Servicios" />
+      <Button fx:id="btnEditar" layoutX="178.0" layoutY="88.0" mnemonicParsing="false" onAction="#btnEditar" text="Editar" />
+      <ComboBox fx:id="cmbBusqueda" layoutX="309.0" layoutY="89.0" prefWidth="150.0" />
+      <TextField fx:id="txtBusqueda" layoutX="552.0" layoutY="86.0" />
+      <Button fx:id="btnBusqueda" layoutX="778.0" layoutY="91.0" mnemonicParsing="false" onAction="#btnBusqueda" text="Buscar" />
+      <TableView fx:id="txtView1" layoutX="114.0" layoutY="166.0" prefHeight="244.0" prefWidth="802.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAgregar" layoutX="184.0" layoutY="448.0" mnemonicParsing="false" onAction="#btnAgregar" text="Agregar servicio" />
+      <Button fx:id="btnEditar1" layoutX="343.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnEditar1" text="Editar servicio" />
+      <Button fx:id="btnDeshabilitar" layoutX="527.0" layoutY="453.0" mnemonicParsing="false" onAction="#btnDeshabilitar" text="Deshabilitar servicio" />
+      <TableView fx:id="txtView2" layoutX="120.0" layoutY="503.0" prefHeight="232.0" prefWidth="800.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>

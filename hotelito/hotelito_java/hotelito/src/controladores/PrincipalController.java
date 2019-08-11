@@ -106,10 +106,16 @@ public class PrincipalController implements Initializable {
 //    btnBusqueda
 //    txtView
 //    cmbReporte
-//            cmbRegistro
-//            txtReporteNum
-//                    txtReportePrecio
-    
+//    cmbRegistro
+//    txtReporteNum
+//    txtReportePrecio
+//    txtPrecioNum
+//    txtPrecioPrecio
+//    btnReportar
+//    btnRegistrar
+//    btnAgregar
+//    btnEditar
+//    btnDeshabilitar
     @FXML
     private void salir(ActionEvent event) {
 //        Stage stage=(Stage) cono1.getScene().getWindow();
