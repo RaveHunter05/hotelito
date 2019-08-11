@@ -82,14 +82,17 @@ public class LoginController implements Initializable {
     }
 
     public void ingresar() throws IOException {
-        Session s = NewHibernateUtil.getSessionFactory().openSession();
-        Query q = s.createQuery("from Usuario where usernameUser='" + email.getText()
-                + "' and passwordUser='" + password.getText() + "'");
-
-        List l = q.list();
-        if (l.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Lista vacia");
-        } else {
+//        JOptionPane.showMessageDialog(null, "antes de session");
+//        Session s = NewHibernateUtil.getSessionFactory().openSession();
+//        JOptionPane.showMessageDialog(null, "despues de session y antes del query");
+//        Query q = s.createQuery("from Usuario where usernameUser='" + email.getText()
+//                + "' and passwordUser='" + password.getText() + "'");
+//        JOptionPane.showMessageDialog(null, "despues del query");
+//
+//        List l = q.list();
+//        if (l.isEmpty()) {
+//            JOptionPane.showMessageDialog(null, "Lista vacia");
+//        } else {
             JOptionPane.showMessageDialog(null, "Usted ingresa buen hombre");
             try {
 
@@ -109,9 +112,9 @@ public class LoginController implements Initializable {
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "error produccion produccion");
             }
-        }
-        Iterator it = l.iterator();
-        s.close();
+//        }
+//        Iterator it = l.iterator();
+//        s.close();
     }
 
     @FXML
