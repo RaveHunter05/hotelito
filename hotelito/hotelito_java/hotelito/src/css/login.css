@@ -1,0 +1,42 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Medium.ttf');
+}
+
+.text {
+    
+}
+
+.mainFxmlClass {
+    
+}
+
+#log{
+    -fx-background-color:#95979A;
+    -fx-font-family: 'RobotoMono';
+}
+
+#titulo{
+    -fx-text-fill: #97CFD7 ;
+    -fx-font-size:20px;
+    -fx-font-weight:bold;
+    -fx-font-family: 'Roboto';
+}
+
+#input{
+    -fx-text-fill: #313233;
+    -fx-alignment: center;
+    -fx-font-family: 'RobotoMono';
+}
+
+#button{
+    -fx-background-color:#97CFD7;
+    -fx-text-fill: #313233;
+    -fx-text-alignment: center;
+    -fx-font-family: 'RobotoMono';
+}
+
