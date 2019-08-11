@@ -1,7 +1,0 @@
-esto es una prueba para probar git 
-
-otra linea de prueba
-
-esta vez si es la ultima prueba...
-
-
