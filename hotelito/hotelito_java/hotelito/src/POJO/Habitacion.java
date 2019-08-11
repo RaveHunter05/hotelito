@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-11-2019 01:00:59 AM by Hibernate Tools 4.3.1
 
 
 import java.util.HashSet;
@@ -11,7 +11,7 @@ import java.util.Set;
 public class Habitacion  implements java.io.Serializable {
 
 
-     private Integer idHab;
+     private int idHab;
      private String numeroHab;
      private String tipoHab;
      private String descripcionHab;
@@ -26,11 +26,13 @@ public class Habitacion  implements java.io.Serializable {
     }
 
 	
-    public Habitacion(String numeroHab, String tipoHab) {
+    public Habitacion(int idHab, String numeroHab, String tipoHab) {
+        this.idHab = idHab;
         this.numeroHab = numeroHab;
         this.tipoHab = tipoHab;
     }
-    public Habitacion(String numeroHab, String tipoHab, String descripcionHab, Integer capacidadHab, Float precioHab, String estadoHab, Set serviciosContratadoses, Set muebles, Set reservacionHabitacioneses) {
+    public Habitacion(int idHab, String numeroHab, String tipoHab, String descripcionHab, Integer capacidadHab, Float precioHab, String estadoHab, Set serviciosContratadoses, Set muebles, Set reservacionHabitacioneses) {
+       this.idHab = idHab;
        this.numeroHab = numeroHab;
        this.tipoHab = tipoHab;
        this.descripcionHab = descripcionHab;
@@ -42,11 +44,11 @@ public class Habitacion  implements java.io.Serializable {
        this.reservacionHabitacioneses = reservacionHabitacioneses;
     }
    
-    public Integer getIdHab() {
+    public int getIdHab() {
         return this.idHab;
     }
     
-    public void setIdHab(Integer idHab) {
+    public void setIdHab(int idHab) {
         this.idHab = idHab;
     }
     public String getNumeroHab() {

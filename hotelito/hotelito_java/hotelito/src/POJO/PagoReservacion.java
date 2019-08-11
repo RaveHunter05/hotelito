@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-11-2019 01:00:59 AM by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -10,7 +10,7 @@ import java.util.Date;
 public class PagoReservacion  implements java.io.Serializable {
 
 
-     private Integer idPago;
+     private int idPago;
      private Reservacion reservacion;
      private Date fecha;
      private String formaPago;
@@ -19,20 +19,22 @@ public class PagoReservacion  implements java.io.Serializable {
     }
 
 	
-    public PagoReservacion(Reservacion reservacion) {
+    public PagoReservacion(int idPago, Reservacion reservacion) {
+        this.idPago = idPago;
         this.reservacion = reservacion;
     }
-    public PagoReservacion(Reservacion reservacion, Date fecha, String formaPago) {
+    public PagoReservacion(int idPago, Reservacion reservacion, Date fecha, String formaPago) {
+       this.idPago = idPago;
        this.reservacion = reservacion;
        this.fecha = fecha;
        this.formaPago = formaPago;
     }
    
-    public Integer getIdPago() {
+    public int getIdPago() {
         return this.idPago;
     }
     
-    public void setIdPago(Integer idPago) {
+    public void setIdPago(int idPago) {
         this.idPago = idPago;
     }
     public Reservacion getReservacion() {

@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 08-01-2019 03:43:23 PM by Hibernate Tools 4.3.1 -->
+<!-- Generated 08-11-2019 01:01:00 AM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="POJO.Cliente" table="cliente" catalog="hotelito" optimistic-lock="version">
-        <id name="idCli" type="java.lang.Integer">
+        <id name="idCli" type="int">
             <column name="id_cli" />
-            <generator class="identity" />
+            <generator class="assigned" />
         </id>
         <property name="cedulaCli" type="string">
             <column name="cedula_cli" length="16" />
@@ -34,6 +34,12 @@
         </property>
         <property name="tituloCli" type="string">
             <column name="titulo_cli" length="20" />
+        </property>
+        <property name="tipoCli" type="string">
+            <column name="tipo_cli" length="30" />
+        </property>
+        <property name="estadoCli" type="string">
+            <column name="estado_cli" length="15" />
         </property>
         <set name="reservacions" table="reservacion_huesped" inverse="true" lazy="true" fetch="select">
             <key>

@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-11-2019 01:00:59 AM by Hibernate Tools 4.3.1
 
 
 
@@ -9,7 +9,7 @@ package POJO;
 public class Proveedor  implements java.io.Serializable {
 
 
-     private Integer idPro;
+     private int idPro;
      private String rucPro;
      private String nombrePro;
      private String direccionPro;
@@ -20,11 +20,13 @@ public class Proveedor  implements java.io.Serializable {
     }
 
 	
-    public Proveedor(String rucPro, String nombrePro) {
+    public Proveedor(int idPro, String rucPro, String nombrePro) {
+        this.idPro = idPro;
         this.rucPro = rucPro;
         this.nombrePro = nombrePro;
     }
-    public Proveedor(String rucPro, String nombrePro, String direccionPro, String telefonoEmp, String emailEmp) {
+    public Proveedor(int idPro, String rucPro, String nombrePro, String direccionPro, String telefonoEmp, String emailEmp) {
+       this.idPro = idPro;
        this.rucPro = rucPro;
        this.nombrePro = nombrePro;
        this.direccionPro = direccionPro;
@@ -32,11 +34,11 @@ public class Proveedor  implements java.io.Serializable {
        this.emailEmp = emailEmp;
     }
    
-    public Integer getIdPro() {
+    public int getIdPro() {
         return this.idPro;
     }
     
-    public void setIdPro(Integer idPro) {
+    public void setIdPro(int idPro) {
         this.idPro = idPro;
     }
     public String getRucPro() {

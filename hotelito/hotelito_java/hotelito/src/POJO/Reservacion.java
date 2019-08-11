@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-11-2019 01:00:59 AM by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -12,7 +12,7 @@ import java.util.Set;
 public class Reservacion  implements java.io.Serializable {
 
 
-     private Integer idRes;
+     private int idRes;
      private Cliente cliente;
      private Date fechaEntrada;
      private Date fechaSalida;
@@ -28,12 +28,14 @@ public class Reservacion  implements java.io.Serializable {
     }
 
 	
-    public Reservacion(Cliente cliente, Date fechaEntrada, Date fechaSalida) {
+    public Reservacion(int idRes, Cliente cliente, Date fechaEntrada, Date fechaSalida) {
+        this.idRes = idRes;
         this.cliente = cliente;
         this.fechaEntrada = fechaEntrada;
         this.fechaSalida = fechaSalida;
     }
-    public Reservacion(Cliente cliente, Date fechaEntrada, Date fechaSalida, Integer cantidadHab, Integer cantidadPersonas, String estado, Float totalRes, Set pagoReservacions, Set clientes, Set reservacionHabitacioneses) {
+    public Reservacion(int idRes, Cliente cliente, Date fechaEntrada, Date fechaSalida, Integer cantidadHab, Integer cantidadPersonas, String estado, Float totalRes, Set pagoReservacions, Set clientes, Set reservacionHabitacioneses) {
+       this.idRes = idRes;
        this.cliente = cliente;
        this.fechaEntrada = fechaEntrada;
        this.fechaSalida = fechaSalida;
@@ -46,11 +48,11 @@ public class Reservacion  implements java.io.Serializable {
        this.reservacionHabitacioneses = reservacionHabitacioneses;
     }
    
-    public Integer getIdRes() {
+    public int getIdRes() {
         return this.idRes;
     }
     
-    public void setIdRes(Integer idRes) {
+    public void setIdRes(int idRes) {
         this.idRes = idRes;
     }
     public Cliente getCliente() {

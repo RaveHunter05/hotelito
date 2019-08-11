@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-11-2019 01:00:59 AM by Hibernate Tools 4.3.1
 
 
 import java.util.HashSet;
@@ -11,7 +11,7 @@ import java.util.Set;
 public class Mueble  implements java.io.Serializable {
 
 
-     private Integer idMue;
+     private int idMue;
      private Habitacion habitacion;
      private String nombreMue;
      private String descripcionMue;
@@ -22,11 +22,13 @@ public class Mueble  implements java.io.Serializable {
     }
 
 	
-    public Mueble(Habitacion habitacion, float precioMue) {
+    public Mueble(int idMue, Habitacion habitacion, float precioMue) {
+        this.idMue = idMue;
         this.habitacion = habitacion;
         this.precioMue = precioMue;
     }
-    public Mueble(Habitacion habitacion, String nombreMue, String descripcionMue, float precioMue, Set danoses) {
+    public Mueble(int idMue, Habitacion habitacion, String nombreMue, String descripcionMue, float precioMue, Set danoses) {
+       this.idMue = idMue;
        this.habitacion = habitacion;
        this.nombreMue = nombreMue;
        this.descripcionMue = descripcionMue;
@@ -34,11 +36,11 @@ public class Mueble  implements java.io.Serializable {
        this.danoses = danoses;
     }
    
-    public Integer getIdMue() {
+    public int getIdMue() {
         return this.idMue;
     }
     
-    public void setIdMue(Integer idMue) {
+    public void setIdMue(int idMue) {
         this.idMue = idMue;
     }
     public Habitacion getHabitacion() {

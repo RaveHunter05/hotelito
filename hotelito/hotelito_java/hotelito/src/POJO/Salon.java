@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-11-2019 01:00:59 AM by Hibernate Tools 4.3.1
 
 
 import java.util.HashSet;
@@ -11,29 +11,36 @@ import java.util.Set;
 public class Salon  implements java.io.Serializable {
 
 
-     private Integer idSalon;
+     private int idSalon;
      private String nombreSalon;
      private Float costo;
      private Integer capacidad;
      private String descripcionSalon;
+     private String estadoSalon;
      private Set eventos = new HashSet(0);
 
     public Salon() {
     }
 
-    public Salon(String nombreSalon, Float costo, Integer capacidad, String descripcionSalon, Set eventos) {
+	
+    public Salon(int idSalon) {
+        this.idSalon = idSalon;
+    }
+    public Salon(int idSalon, String nombreSalon, Float costo, Integer capacidad, String descripcionSalon, String estadoSalon, Set eventos) {
+       this.idSalon = idSalon;
        this.nombreSalon = nombreSalon;
        this.costo = costo;
        this.capacidad = capacidad;
        this.descripcionSalon = descripcionSalon;
+       this.estadoSalon = estadoSalon;
        this.eventos = eventos;
     }
    
-    public Integer getIdSalon() {
+    public int getIdSalon() {
         return this.idSalon;
     }
     
-    public void setIdSalon(Integer idSalon) {
+    public void setIdSalon(int idSalon) {
         this.idSalon = idSalon;
     }
     public String getNombreSalon() {
@@ -63,6 +70,13 @@ public class Salon  implements java.io.Serializable {
     
     public void setDescripcionSalon(String descripcionSalon) {
         this.descripcionSalon = descripcionSalon;
+    }
+    public String getEstadoSalon() {
+        return this.estadoSalon;
+    }
+    
+    public void setEstadoSalon(String estadoSalon) {
+        this.estadoSalon = estadoSalon;
     }
     public Set getEventos() {
         return this.eventos;

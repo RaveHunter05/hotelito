@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-11-2019 01:00:59 AM by Hibernate Tools 4.3.1
 
 
 
@@ -9,25 +9,35 @@ package POJO;
 public class Usuario  implements java.io.Serializable {
 
 
-     private Integer idUser;
+     private int idUser;
      private Empleado empleado;
      private String usernameUser;
      private String passwordUser;
+     private String estadoUser;
 
     public Usuario() {
     }
 
-    public Usuario(Empleado empleado, String usernameUser, String passwordUser) {
+	
+    public Usuario(int idUser, Empleado empleado, String usernameUser, String passwordUser) {
+        this.idUser = idUser;
+        this.empleado = empleado;
+        this.usernameUser = usernameUser;
+        this.passwordUser = passwordUser;
+    }
+    public Usuario(int idUser, Empleado empleado, String usernameUser, String passwordUser, String estadoUser) {
+       this.idUser = idUser;
        this.empleado = empleado;
        this.usernameUser = usernameUser;
        this.passwordUser = passwordUser;
+       this.estadoUser = estadoUser;
     }
    
-    public Integer getIdUser() {
+    public int getIdUser() {
         return this.idUser;
     }
     
-    public void setIdUser(Integer idUser) {
+    public void setIdUser(int idUser) {
         this.idUser = idUser;
     }
     public Empleado getEmpleado() {
@@ -50,6 +60,13 @@ public class Usuario  implements java.io.Serializable {
     
     public void setPasswordUser(String passwordUser) {
         this.passwordUser = passwordUser;
+    }
+    public String getEstadoUser() {
+        return this.estadoUser;
+    }
+    
+    public void setEstadoUser(String estadoUser) {
+        this.estadoUser = estadoUser;
     }
 
 

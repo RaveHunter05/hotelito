@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 08-01-2019 03:43:23 PM by Hibernate Tools 4.3.1 -->
+<!-- Generated 08-11-2019 01:01:00 AM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="POJO.Usuario" table="usuario" catalog="hotelito" optimistic-lock="version">
-        <id name="idUser" type="java.lang.Integer">
+        <id name="idUser" type="int">
             <column name="id_user" />
-            <generator class="identity" />
+            <generator class="assigned" />
         </id>
         <many-to-one name="empleado" class="POJO.Empleado" fetch="select">
             <column name="id_emp" not-null="true" />
@@ -16,6 +16,9 @@
         </property>
         <property name="passwordUser" type="string">
             <column name="password_user" length="15" not-null="true" />
+        </property>
+        <property name="estadoUser" type="string">
+            <column name="estado_user" length="15" />
         </property>
     </class>
 </hibernate-mapping>

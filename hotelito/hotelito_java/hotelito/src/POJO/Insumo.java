@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-11-2019 01:00:59 AM by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -10,7 +10,7 @@ import java.util.Date;
 public class Insumo  implements java.io.Serializable {
 
 
-     private Integer idInsumo;
+     private int idInsumo;
      private String nombreInsumo;
      private String descripcion;
      private Integer cantidad;
@@ -22,13 +22,15 @@ public class Insumo  implements java.io.Serializable {
     }
 
 	
-    public Insumo(String nombreInsumo, Date fechaPedido, Date fechaAPedir, Date cantidadAPedir) {
+    public Insumo(int idInsumo, String nombreInsumo, Date fechaPedido, Date fechaAPedir, Date cantidadAPedir) {
+        this.idInsumo = idInsumo;
         this.nombreInsumo = nombreInsumo;
         this.fechaPedido = fechaPedido;
         this.fechaAPedir = fechaAPedir;
         this.cantidadAPedir = cantidadAPedir;
     }
-    public Insumo(String nombreInsumo, String descripcion, Integer cantidad, Date fechaPedido, Date fechaAPedir, Date cantidadAPedir) {
+    public Insumo(int idInsumo, String nombreInsumo, String descripcion, Integer cantidad, Date fechaPedido, Date fechaAPedir, Date cantidadAPedir) {
+       this.idInsumo = idInsumo;
        this.nombreInsumo = nombreInsumo;
        this.descripcion = descripcion;
        this.cantidad = cantidad;
@@ -37,11 +39,11 @@ public class Insumo  implements java.io.Serializable {
        this.cantidadAPedir = cantidadAPedir;
     }
    
-    public Integer getIdInsumo() {
+    public int getIdInsumo() {
         return this.idInsumo;
     }
     
-    public void setIdInsumo(Integer idInsumo) {
+    public void setIdInsumo(int idInsumo) {
         this.idInsumo = idInsumo;
     }
     public String getNombreInsumo() {
