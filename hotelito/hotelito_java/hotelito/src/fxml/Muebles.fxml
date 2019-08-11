@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.MueblesController">
+<AnchorPane id="AnchorPane" prefHeight="777.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="controladores.MueblesController">
     <stylesheets>
-        <URL value="@/css/muebles.css"/>
+        <URL value="@/css/muebles.css" />
     </stylesheets>
+   <children>
+      <Label layoutX="433.0" layoutY="34.0" text="Muebles disponibles" />
+      <TableView layoutX="112.0" layoutY="126.0" prefHeight="240.0" prefWidth="798.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Separator layoutX="2.0" layoutY="392.0" prefHeight="1.0" prefWidth="1018.0" />
+      <Label layoutX="211.0" layoutY="432.0" text="Reportes muebles dañados" />
+      <Label layoutX="639.0" layoutY="431.0" text="Registrar nuevo mueble" />
+      <ComboBox layoutX="202.0" layoutY="468.0" prefWidth="150.0" promptText="Tipo de mueble" />
+      <TextField layoutX="205.0" layoutY="517.0" promptText="Numero de cuarto" />
+      <TextField layoutX="206.0" layoutY="566.0" promptText="Precio" />
+      <Button layoutX="251.0" layoutY="632.0" mnemonicParsing="false" text="Reportar" />
+      <ComboBox layoutX="625.0" layoutY="466.0" prefWidth="150.0" promptText="Tipo de mueble" />
+      <TextField layoutX="628.0" layoutY="515.0" promptText="Numero de cuarto" />
+      <TextField layoutX="629.0" layoutY="564.0" promptText="Precio" />
+      <Button layoutX="674.0" layoutY="630.0" mnemonicParsing="false" text="Registrar" />
+      <Button layoutX="181.0" layoutY="78.0" mnemonicParsing="false" text="Editar" />
+      <ComboBox layoutX="284.0" layoutY="74.0" prefWidth="150.0" promptText="Tipo de busqueda" />
+      <TextField layoutX="494.0" layoutY="76.0" />
+      <Button layoutX="739.0" layoutY="76.0" mnemonicParsing="false" text="Buscar" />
+   </children>
 </AnchorPane>
