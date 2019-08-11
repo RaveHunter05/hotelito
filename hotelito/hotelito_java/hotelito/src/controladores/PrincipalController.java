@@ -96,10 +96,20 @@ public class PrincipalController implements Initializable {
 
     @FXML
     private void BUTON1(ActionEvent event) throws IOException {
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Login.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Reservacion.fxml"));
         panelDerecha.getChildren().setAll(pane);
     }
-
+    
+//    btnEditar
+//    cmbBusqueda
+//    txtBusqueda
+//    btnBusqueda
+//    txtView
+//    cmbReporte
+//            cmbRegistro
+//            txtReporteNum
+//                    txtReportePrecio
+    
     @FXML
     private void salir(ActionEvent event) {
 //        Stage stage=(Stage) cono1.getScene().getWindow();
