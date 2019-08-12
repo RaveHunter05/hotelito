@@ -7,7 +7,14 @@ package controladores;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableView;
 
 /**
  * FXML Controller class
@@ -16,6 +23,27 @@ import javafx.fxml.Initializable;
  */
 public class ReportesController implements Initializable {
 
+    @FXML
+    private ComboBox<?> cmbBusqueda;
+    @FXML
+    private DatePicker dpDesde;
+    @FXML
+    private DatePicker dpHasta;
+    @FXML
+    private Button btnBuscar;
+    @FXML
+    private Label lbPDF;
+    @FXML
+    private TableView<?> tvReportes;
+
+//    btnReservacion
+//            btnInsumos 
+//            btnIngredientes 
+//            btnMuebles 
+//            btnServicios btnHabitaciones btnAdministracion btnReportes
+                            
+            
+    
     /**
      * Initializes the controller class.
      */
@@ -23,5 +51,9 @@ public class ReportesController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void btnBuscar(ActionEvent event) {
+    }
     
 }
