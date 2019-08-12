@@ -31,7 +31,15 @@ import javax.swing.JOptionPane;
  * @author user
  */
 public class PrincipalController implements Initializable {
-
+//    dpDesde
+//    dpHasta
+//    cmbBusqueda
+//    btnBuscar
+//    lbPDF
+    // tvReportes
+    
+    
+    
     @FXML
     private ImageView fotoPerfil;
     @FXML
@@ -123,6 +131,48 @@ public class PrincipalController implements Initializable {
             Stage stage=(Stage) cono1.getScene().getWindow();
             stage.close();
             System.exit(0);
+    }
+
+    @FXML
+    private void INSUMOS(ActionEvent event) throws IOException {
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Proveedores.fxml"));
+        panelDerecha.getChildren().setAll(pane);
+    }
+
+    @FXML
+    private void INGREDIENTES(ActionEvent event) throws IOException {
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Ingredientes.fxml"));
+        panelDerecha.getChildren().setAll(pane);
+    }
+
+    @FXML
+    private void MUEBLES(ActionEvent event) throws IOException {
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Reservacion.fxml"));
+        panelDerecha.getChildren().setAll(pane);
+    }
+
+    @FXML
+    private void SERVICIOS(ActionEvent event) throws IOException {
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Servicios.fxml"));
+        panelDerecha.getChildren().setAll(pane);
+    }
+
+    @FXML
+    private void HABITACIONES(ActionEvent event) throws IOException {
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Habitaciones.fxml"));
+        panelDerecha.getChildren().setAll(pane);
+    }
+
+    @FXML
+    private void ADMINISTRACION(ActionEvent event) throws IOException {
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Administracion.fxml"));
+        panelDerecha.getChildren().setAll(pane);
+    }
+
+    @FXML
+    private void REPORTES(ActionEvent event) throws IOException {
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Reportes.fxml"));
+        panelDerecha.getChildren().setAll(pane);
     }
 
     

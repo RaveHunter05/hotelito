@@ -29,37 +29,37 @@
                               <Label id="cono" fx:id="cono" />
                            </graphic>
                         </Button>
-                        <Button fx:id="button2" mnemonicParsing="false" prefHeight="88.0" prefWidth="270.0" text="Insumos">
+                        <Button fx:id="button2" mnemonicParsing="false" onAction="#INSUMOS" prefHeight="88.0" prefWidth="270.0" text="Insumos">
                            <graphic>
                               <Label id="cono" fx:id="cono1" />
                            </graphic>
                         </Button>
-                        <Button fx:id="button3" mnemonicParsing="false" prefHeight="88.0" prefWidth="270.0" text="Ingredientes">
+                        <Button fx:id="button3" mnemonicParsing="false" onAction="#INGREDIENTES" prefHeight="88.0" prefWidth="270.0" text="Ingredientes">
                            <graphic>
                               <Label id="cono" fx:id="cono2" />
                            </graphic>
                         </Button>
-                        <Button fx:id="button4" mnemonicParsing="false" prefHeight="88.0" prefWidth="270.0" text="Muebles">
+                        <Button fx:id="button4" mnemonicParsing="false" onAction="#MUEBLES" prefHeight="88.0" prefWidth="270.0" text="Muebles">
                            <graphic>
                               <Label id="cono" fx:id="cono3" />
                            </graphic>
                         </Button>
-                        <Button fx:id="button5" mnemonicParsing="false" prefHeight="88.0" prefWidth="270.0" text="Servicios">
+                        <Button fx:id="button5" mnemonicParsing="false" onAction="#SERVICIOS" prefHeight="88.0" prefWidth="270.0" text="Servicios">
                            <graphic>
                               <Label id="cono" fx:id="cono4" />
                            </graphic>
                         </Button>
-                        <Button fx:id="button6" mnemonicParsing="false" prefHeight="88.0" prefWidth="270.0" text="Habitaciones">
+                        <Button fx:id="button6" mnemonicParsing="false" onAction="#HABITACIONES" prefHeight="88.0" prefWidth="270.0" text="Habitaciones">
                            <graphic>
                               <Label id="cono" fx:id="cono5" />
                            </graphic>
                         </Button>
-                        <Button fx:id="button7" mnemonicParsing="false" prefHeight="88.0" prefWidth="270.0" text="Administracion">
+                        <Button fx:id="button7" mnemonicParsing="false" onAction="#ADMINISTRACION" prefHeight="88.0" prefWidth="270.0" text="Administracion">
                            <graphic>
                               <Label id="cono" fx:id="cono6" />
                            </graphic>
                         </Button>
-                        <Button fx:id="button8" mnemonicParsing="false" prefHeight="88.0" prefWidth="270.0" text="Reportes">
+                        <Button fx:id="button8" mnemonicParsing="false" onAction="#REPORTES" prefHeight="88.0" prefWidth="270.0" text="Reportes">
                            <graphic>
                               <Label id="cono" fx:id="cono7" />
                            </graphic>
