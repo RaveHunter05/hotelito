@@ -22,34 +22,6 @@ import javafx.scene.control.TextField;
  */
 public class IngredientesController implements Initializable {
 
-    @FXML
-    private Button btnEditar;
-    @FXML
-    private ComboBox<?> cmbBusqueda;
-    @FXML
-    private TextField txtBusqueda;
-    @FXML
-    private Button btnBusqueda;
-    @FXML
-    private TableView<?> tbView;
-    @FXML
-    private ComboBox<?> cmbIngrediente;
-    @FXML
-    private ComboBox<?> cmbProveedor;
-    @FXML
-    private TextField txtCantidadIngredientes;
-    @FXML
-    private TextField txtReorden;
-    @FXML
-    private TextField txtPrecioUnitario;
-    @FXML
-    private Button btnEliminar;
-    @FXML
-    private TextField txtTipo;
-    @FXML
-    private Button btnAgregarIngrediente;
-    @FXML
-    private DatePicker fechaVencimiento;
 
     /**
      * Initializes the controller class.

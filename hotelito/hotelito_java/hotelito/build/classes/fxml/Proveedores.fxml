@@ -14,21 +14,16 @@
         <URL value="@/css/proveedores.css" />
     </stylesheets>
    <children>
-      <Label layoutX="482.0" layoutY="94.0" text="Proveedores" />
-      <Button fx:id="btnEditar1" layoutX="202.0" layoutY="148.0" mnemonicParsing="false" text="Editar" />
-      <ComboBox fx:id="cmbBusqueda" layoutX="330.0" layoutY="151.0" prefWidth="150.0" promptText="Tipo de busqueda" />
-      <TextField fx:id="txtBusqueda" layoutX="569.0" layoutY="150.0" />
-      <Button fx:id="btnBuscar" layoutX="793.0" layoutY="148.0" mnemonicParsing="false" text="Buscar" />
-      <TableView fx:id="tvGeneral" layoutX="191.0" layoutY="212.0" prefHeight="226.0" prefWidth="678.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
-        </columns>
-      </TableView>
-      <Button fx:id="btnAgregar" layoutX="200.0" layoutY="471.0" mnemonicParsing="false" text="Agregar proveedor" />
-      <Button fx:id="btnEditar" layoutX="478.0" layoutY="475.0" mnemonicParsing="false" text="Editar proveedor" />
-      <Button fx:id="btnBorrar" layoutX="721.0" layoutY="471.0" mnemonicParsing="false" text="Borrar proveedor" />
-      <TableView fx:id="tbvParticular" layoutX="191.0" layoutY="521.0" prefHeight="232.0" prefWidth="674.0">
+      <Label layoutX="482.0" layoutY="36.0" text="Lista de proveedores" />
+      <Label layoutX="150.0" layoutY="86.0" text="Habitaciones" />
+      <ComboBox layoutX="323.0" layoutY="82.0" prefWidth="150.0" />
+      <TextField layoutX="557.0" layoutY="82.0" />
+      <Button layoutX="752.0" layoutY="82.0" mnemonicParsing="false" text="Button" />
+      <Label layoutX="864.0" layoutY="86.0" text="Label" />
+      <Button layoutX="176.0" layoutY="148.0" mnemonicParsing="false" text="Nuevo proveedor" />
+      <Button layoutX="455.0" layoutY="150.0" mnemonicParsing="false" text="Editar proveedor" />
+      <Button layoutX="729.0" layoutY="150.0" mnemonicParsing="false" text="Deshabilitar" />
+      <TableView layoutX="115.0" layoutY="216.0" prefHeight="514.0" prefWidth="808.0">
         <columns>
           <TableColumn prefWidth="75.0" text="C1" />
           <TableColumn prefWidth="75.0" text="C2" />

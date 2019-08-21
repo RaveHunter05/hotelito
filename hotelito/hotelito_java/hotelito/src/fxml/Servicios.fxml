@@ -9,30 +9,38 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="777.0" prefWidth="1028.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="controladores.ServiciosController">
+<AnchorPane id="AnchorPane" prefHeight="777.0" prefWidth="1028.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.ServiciosController">
     <stylesheets>
         <URL value="@/css/servicios.css" />
     </stylesheets>
    <children>
-      <Label layoutX="490.0" layoutY="40.0" text="Servicios" />
-      <Button fx:id="btnEditar" layoutX="178.0" layoutY="88.0" mnemonicParsing="false" onAction="#btnEditar" text="Editar" />
-      <ComboBox fx:id="cmbBusqueda" layoutX="309.0" layoutY="89.0" prefWidth="150.0" />
-      <TextField fx:id="txtBusqueda" layoutX="552.0" layoutY="86.0" />
-      <Button fx:id="btnBusqueda" layoutX="778.0" layoutY="91.0" mnemonicParsing="false" onAction="#btnBusqueda" text="Buscar" />
-      <TableView fx:id="txtView1" layoutX="114.0" layoutY="166.0" prefHeight="244.0" prefWidth="802.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
-        </columns>
+      <Label layoutX="152.0" layoutY="88.0" text="Habitaciones" />
+      <TextField layoutX="554.0" layoutY="84.0" />
+      <ComboBox layoutX="315.0" layoutY="84.0" prefWidth="150.0" />
+      <Button layoutX="784.0" layoutY="93.0" mnemonicParsing="false" text="Button" />
+      <Label layoutX="884.0" layoutY="98.0" text="Label" />
+      <Label layoutX="466.0" layoutY="35.0" text="Reservacion" />
+      <TableView layoutX="131.0" layoutY="158.0" prefHeight="246.0" prefWidth="800.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
       </TableView>
-      <Button fx:id="btnAgregar" layoutX="184.0" layoutY="448.0" mnemonicParsing="false" onAction="#btnAgregar" text="Agregar servicio" />
-      <Button fx:id="btnEditar1" layoutX="343.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnEditar1" text="Editar servicio" />
-      <Button fx:id="btnDeshabilitar" layoutX="527.0" layoutY="453.0" mnemonicParsing="false" onAction="#btnDeshabilitar" text="Deshabilitar servicio" />
-      <TableView fx:id="txtView2" layoutX="120.0" layoutY="503.0" prefHeight="232.0" prefWidth="800.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
-        </columns>
+      <Button layoutX="213.0" layoutY="412.0" mnemonicParsing="false" text="Nueva reserva" />
+      <Button layoutX="440.0" layoutY="412.0" mnemonicParsing="false" text="Editar reserva" />
+      <Label layoutX="615.0" layoutY="416.0" text="Label" />
+      <Label layoutX="745.0" layoutY="416.0" text="Label" />
+      <TableView layoutX="138.0" layoutY="457.0" prefHeight="210.0" prefWidth="798.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
       </TableView>
+      <Label layoutX="176.0" layoutY="708.0" text="Subtotal" />
+      <TextField layoutX="246.0" layoutY="704.0" />
+      <Label layoutX="438.0" layoutY="710.0" text="IVA" />
+      <TextField layoutX="508.0" layoutY="706.0" />
+      <Label layoutX="688.0" layoutY="710.0" text="Total" />
+      <TextField layoutX="758.0" layoutY="706.0" />
    </children>
 </AnchorPane>

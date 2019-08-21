@@ -22,16 +22,6 @@ import javafx.scene.control.TextField;
  */
 public class AdministracionController implements Initializable {
 
-    @FXML
-    private Button btnEditar;
-    @FXML
-    private ComboBox<?> cmbBusqueda;
-    @FXML
-    private TextField txtBusqueda;
-    @FXML
-    private Button btnBusqueda;
-    @FXML
-    private TableView<?> txtView;
     
     
     
@@ -43,12 +33,5 @@ public class AdministracionController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void btnEditar(ActionEvent event) {
-    }
-
-    @FXML
-    private void btnBusqueda(ActionEvent event) {
-    }
     
 }

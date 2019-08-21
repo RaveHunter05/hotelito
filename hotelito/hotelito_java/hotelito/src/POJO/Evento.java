@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-21-2019 04:10:44 PM by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -19,7 +19,7 @@ public class Evento  implements java.io.Serializable {
      private Integer cantidadPersonas;
      private Date horaInicio;
      private Date horaFin;
-     private String estado;
+     private String estadoEven;
      private Float costoServicios;
      private Float subtotal;
      private Float total;
@@ -35,14 +35,14 @@ public class Evento  implements java.io.Serializable {
         this.salon = salon;
         this.fechaEven = fechaEven;
     }
-    public Evento(Cliente cliente, Salon salon, Date fechaEven, Integer cantidadPersonas, Date horaInicio, Date horaFin, String estado, Float costoServicios, Float subtotal, Float total, Set pagoEventos, Set eventoServicioses) {
+    public Evento(Cliente cliente, Salon salon, Date fechaEven, Integer cantidadPersonas, Date horaInicio, Date horaFin, String estadoEven, Float costoServicios, Float subtotal, Float total, Set pagoEventos, Set eventoServicioses) {
        this.cliente = cliente;
        this.salon = salon;
        this.fechaEven = fechaEven;
        this.cantidadPersonas = cantidadPersonas;
        this.horaInicio = horaInicio;
        this.horaFin = horaFin;
-       this.estado = estado;
+       this.estadoEven = estadoEven;
        this.costoServicios = costoServicios;
        this.subtotal = subtotal;
        this.total = total;
@@ -99,12 +99,12 @@ public class Evento  implements java.io.Serializable {
     public void setHoraFin(Date horaFin) {
         this.horaFin = horaFin;
     }
-    public String getEstado() {
-        return this.estado;
+    public String getEstadoEven() {
+        return this.estadoEven;
     }
     
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public void setEstadoEven(String estadoEven) {
+        this.estadoEven = estadoEven;
     }
     public Float getCostoServicios() {
         return this.costoServicios;
