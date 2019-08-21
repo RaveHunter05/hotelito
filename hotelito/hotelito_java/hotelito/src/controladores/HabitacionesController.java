@@ -22,16 +22,6 @@ import javafx.scene.control.TextField;
  */
 public class HabitacionesController implements Initializable {
 
-    @FXML
-    private Button btnEditar;
-    @FXML
-    private ComboBox<?> cmbBusqueda;
-    @FXML
-    private TextField txtBusqueda;
-    @FXML
-    private Button btnBusqueda;
-    @FXML
-    private TableView<?> txtView;
 
     /**
      * Initializes the controller class.
@@ -41,12 +31,5 @@ public class HabitacionesController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void btnEditar(ActionEvent event) {
-    }
-
-    @FXML
-    private void btnBusqueda(ActionEvent event) {
-    }
     
 }

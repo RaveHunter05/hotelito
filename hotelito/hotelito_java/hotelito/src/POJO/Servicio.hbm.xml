@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 08-01-2019 03:43:23 PM by Hibernate Tools 4.3.1 -->
+<!-- Generated 08-21-2019 04:10:46 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-    <class name="POJO.Servicio" table="servicio" catalog="hotelito" optimistic-lock="version">
+    <class name="POJO.Servicio" table="servicio" catalog="dbhotelito" optimistic-lock="version">
         <id name="idSer" type="java.lang.Integer">
             <column name="id_ser" />
             <generator class="identity" />
@@ -19,6 +19,9 @@
         </property>
         <property name="precioSer" type="java.lang.Float">
             <column name="precio_ser" precision="12" scale="0" />
+        </property>
+        <property name="estadoSer" type="string">
+            <column name="estado_ser" length="15" />
         </property>
         <set name="serviciosContratadoses" table="servicios_contratados" inverse="true" lazy="true" fetch="select">
             <key>

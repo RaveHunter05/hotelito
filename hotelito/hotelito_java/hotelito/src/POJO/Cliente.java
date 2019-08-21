@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-21-2019 04:10:44 PM by Hibernate Tools 4.3.1
 
 
 import java.util.HashSet;
@@ -21,6 +21,8 @@ public class Cliente  implements java.io.Serializable {
      private String telefonoCli;
      private String emailCli;
      private String tituloCli;
+     private String tipoCli;
+     private String estadoCli;
      private Set reservacions = new HashSet(0);
      private Set eventos = new HashSet(0);
      private Set reservacions_1 = new HashSet(0);
@@ -34,7 +36,7 @@ public class Cliente  implements java.io.Serializable {
         this.priapellidoCli = priapellidoCli;
         this.edadCli = edadCli;
     }
-    public Cliente(String cedulaCli, String prinombreCli, String segnombreCli, String priapellidoCli, String segapellidoCli, int edadCli, String telefonoCli, String emailCli, String tituloCli, Set reservacions, Set eventos, Set reservacions_1) {
+    public Cliente(String cedulaCli, String prinombreCli, String segnombreCli, String priapellidoCli, String segapellidoCli, int edadCli, String telefonoCli, String emailCli, String tituloCli, String tipoCli, String estadoCli, Set reservacions, Set eventos, Set reservacions_1) {
        this.cedulaCli = cedulaCli;
        this.prinombreCli = prinombreCli;
        this.segnombreCli = segnombreCli;
@@ -44,6 +46,8 @@ public class Cliente  implements java.io.Serializable {
        this.telefonoCli = telefonoCli;
        this.emailCli = emailCli;
        this.tituloCli = tituloCli;
+       this.tipoCli = tipoCli;
+       this.estadoCli = estadoCli;
        this.reservacions = reservacions;
        this.eventos = eventos;
        this.reservacions_1 = reservacions_1;
@@ -118,6 +122,20 @@ public class Cliente  implements java.io.Serializable {
     
     public void setTituloCli(String tituloCli) {
         this.tituloCli = tituloCli;
+    }
+    public String getTipoCli() {
+        return this.tipoCli;
+    }
+    
+    public void setTipoCli(String tipoCli) {
+        this.tipoCli = tipoCli;
+    }
+    public String getEstadoCli() {
+        return this.estadoCli;
+    }
+    
+    public void setEstadoCli(String estadoCli) {
+        this.estadoCli = estadoCli;
     }
     public Set getReservacions() {
         return this.reservacions;

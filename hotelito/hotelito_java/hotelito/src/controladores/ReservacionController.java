@@ -20,18 +20,6 @@ import javafx.scene.control.TextField;
  */
 public class ReservacionController implements Initializable {
 
-    @FXML
-    private TextField txtNombre;
-    @FXML
-    private TextField txtApellido1;
-    @FXML
-    private TextField txtNombre2;
-    @FXML
-    private TextField txtApellido2;
-    @FXML
-    private Button btnDisponibilidad;
-    @FXML
-    private Button btnReservacion;
 
     /**
      * Initializes the controller class.
@@ -41,11 +29,4 @@ public class ReservacionController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void disponibles(ActionEvent event) {
-    }
-
-    @FXML
-    private void reservacion(ActionEvent event) {
-    }
 }

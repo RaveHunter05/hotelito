@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-21-2019 04:10:44 PM by Hibernate Tools 4.3.1
 
 
 
@@ -13,14 +13,22 @@ public class Usuario  implements java.io.Serializable {
      private Empleado empleado;
      private String usernameUser;
      private String passwordUser;
+     private String estadoUser;
 
     public Usuario() {
     }
 
+	
     public Usuario(Empleado empleado, String usernameUser, String passwordUser) {
+        this.empleado = empleado;
+        this.usernameUser = usernameUser;
+        this.passwordUser = passwordUser;
+    }
+    public Usuario(Empleado empleado, String usernameUser, String passwordUser, String estadoUser) {
        this.empleado = empleado;
        this.usernameUser = usernameUser;
        this.passwordUser = passwordUser;
+       this.estadoUser = estadoUser;
     }
    
     public Integer getIdUser() {
@@ -50,6 +58,13 @@ public class Usuario  implements java.io.Serializable {
     
     public void setPasswordUser(String passwordUser) {
         this.passwordUser = passwordUser;
+    }
+    public String getEstadoUser() {
+        return this.estadoUser;
+    }
+    
+    public void setEstadoUser(String estadoUser) {
+        this.estadoUser = estadoUser;
     }
 
 

@@ -1,0 +1,6 @@
+insert into empleado(cedula_em,    prinombre_emp, priapellido_emp, foto_emp,       nacimiento_emp, telefono_emp, email_emp,              cargo_emp)
+values ('asdfasdf', 'Julio', 'Bolsa', 'asdfasdfasdf', 05-18-1997, '25421380', 'JulioBolsa@gmail.com', 'Contador') 
+
+insert into usuario(id_emp, username_user, password_user)
+values(1, 'walter', '1234')
+

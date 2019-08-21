@@ -21,24 +21,6 @@ import javafx.scene.control.TextField;
  */
 public class ProveedoresController implements Initializable {
 
-    @FXML
-    private Button btnEditar1;
-    @FXML
-    private ComboBox<?> cmbBusqueda;
-    @FXML
-    private TextField txtBusqueda;
-    @FXML
-    private Button btnBuscar;
-    @FXML
-    private TableView<?> tvGeneral;
-    @FXML
-    private Button btnAgregar;
-    @FXML
-    private Button btnEditar;
-    @FXML
-    private Button btnBorrar;
-    @FXML
-    private TableView<?> tbvParticular;
 
     /**
      * Initializes the controller class.

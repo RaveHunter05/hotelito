@@ -1,5 +1,5 @@
 package POJO;
-// Generated 08-01-2019 03:43:22 PM by Hibernate Tools 4.3.1
+// Generated 08-21-2019 04:10:44 PM by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -24,6 +24,7 @@ public class Empleado  implements java.io.Serializable {
      private String emailEmp;
      private String cargoEmp;
      private Float sueldoEmp;
+     private String estadoEmp;
      private Set usuarios = new HashSet(0);
 
     public Empleado() {
@@ -40,7 +41,7 @@ public class Empleado  implements java.io.Serializable {
         this.emailEmp = emailEmp;
         this.cargoEmp = cargoEmp;
     }
-    public Empleado(String cedulaEm, String prinombreEmp, String segnombreEmp, String priapellidoEmp, String segapellidoEmp, String fotoEmp, Date nacimientoEmp, String telefonoEmp, String emailEmp, String cargoEmp, Float sueldoEmp, Set usuarios) {
+    public Empleado(String cedulaEm, String prinombreEmp, String segnombreEmp, String priapellidoEmp, String segapellidoEmp, String fotoEmp, Date nacimientoEmp, String telefonoEmp, String emailEmp, String cargoEmp, Float sueldoEmp, String estadoEmp, Set usuarios) {
        this.cedulaEm = cedulaEm;
        this.prinombreEmp = prinombreEmp;
        this.segnombreEmp = segnombreEmp;
@@ -52,6 +53,7 @@ public class Empleado  implements java.io.Serializable {
        this.emailEmp = emailEmp;
        this.cargoEmp = cargoEmp;
        this.sueldoEmp = sueldoEmp;
+       this.estadoEmp = estadoEmp;
        this.usuarios = usuarios;
     }
    
@@ -138,6 +140,13 @@ public class Empleado  implements java.io.Serializable {
     
     public void setSueldoEmp(Float sueldoEmp) {
         this.sueldoEmp = sueldoEmp;
+    }
+    public String getEstadoEmp() {
+        return this.estadoEmp;
+    }
+    
+    public void setEstadoEmp(String estadoEmp) {
+        this.estadoEmp = estadoEmp;
     }
     public Set getUsuarios() {
         return this.usuarios;
