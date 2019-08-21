@@ -59,6 +59,21 @@ VALUES
 30,
 'disponible');
 
+INSERT INTO `hotelito`.`habitacion`
+(`numero_hab`,
+`tipo_hab`,
+`descripcion_hab`,
+`capacidad_hab`,
+`precio_hab`,
+`estado_hab`)
+VALUES
+('002',
+'Doble',
+'Habitacion con desayuno incluido',
+2,
+30,
+'disponible');
+
 select * from habitacion;
 
 ----------------------------------------------------------------------------------------------------------
@@ -125,11 +140,36 @@ select * from reservacion;
 
 /*insertando reservacion_habitaciones*/
 
+INSERT INTO `hotelito`.`reservacion_habitaciones`
+(`id_res`,
+`id_hab`,
+`subtotal`)
+VALUES
+(1,
+1,
+(select precio_hab from habitacion where id_hab = '1'));
+
+INSERT INTO `hotelito`.`reservacion_habitaciones`
+(`id_res`,
+`id_hab`,
+`subtotal`)
+VALUES
+(1,
+2,
+30);
+
 select * from reservacion_habitaciones;
 
 ----------------------------------------------------------------------------------------------------------
 
 /*insertando reservacion_huesped*/
+
+INSERT INTO `hotelito`.`reservacion_huesped`
+(`id_res`,
+`id_cli`)
+VALUES
+(1,
+1);
 
 select * from reservacion_huesped;
 
@@ -137,8 +177,18 @@ select * from reservacion_huesped;
 
 /*insetando pado_reservacion*/
 
-select * from pago_reservacion;
+INSERT INTO `hotelito`.`pago_reservacion`
+(`id_res`,
+`fecha`,
+`forma_pago`)
+VALUES
+(1,
+'2019-08-11',
+'tarjeta');
 
+
+select * from pago_reservacion;
+select * from reservacion inner join pago_reservacion;
 ----------------------------------------------------------------------------------------------------------
 
 /*insertando factura*/
