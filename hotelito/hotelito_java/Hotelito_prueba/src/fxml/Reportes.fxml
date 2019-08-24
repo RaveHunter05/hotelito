@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.ReportesController">
+    <stylesheets>
+        <URL value="@/css/reportes.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="496.0" layoutY="60.0" text="Reportes" />
+      <ComboBox fx:id="cmbBusqueda" layoutX="698.0" layoutY="130.0" prefWidth="150.0" />
+      <DatePicker fx:id="dpDesde" layoutX="171.0" layoutY="132.0" />
+      <DatePicker fx:id="dpHasta" layoutX="471.0" layoutY="130.0" />
+      <Label layoutX="108.0" layoutY="136.0" text="Desde" />
+      <Label layoutX="406.0" layoutY="136.0" text="Hasta" />
+      <Button fx:id="btnBuscar" layoutX="467.0" layoutY="204.0" mnemonicParsing="false" onAction="#btnBuscar" text="Button" />
+      <Label fx:id="lbPDF" layoutX="573.0" layoutY="208.0" text="Label" />
+      <TableView fx:id="tvReportes" layoutX="99.0" layoutY="278.0" prefHeight="316.0" prefWidth="830.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="915.0" layoutY="136.0" text="Label" />
+      <TextField layoutX="290.0" layoutY="204.0" />
+      <ComboBox layoutX="117.0" layoutY="204.0" prefWidth="150.0" />
+      <Label layoutX="659.0" layoutY="208.0" text="Label" />
+   </children>
+</AnchorPane>

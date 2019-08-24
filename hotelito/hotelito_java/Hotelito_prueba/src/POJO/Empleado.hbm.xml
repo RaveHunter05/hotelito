@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-07-2019 11:38:15 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Empleado" table="empleado" catalog="hotelito_prueba" optimistic-lock="version">
+        <id name="idEmp" type="java.lang.Integer">
+            <column name="id_emp" />
+            <generator class="identity" />
+        </id>
+        <property name="cedulaEm" type="string">
+            <column name="cedula_em" length="16" not-null="true" />
+        </property>
+        <property name="prinombreEmp" type="string">
+            <column name="prinombre_emp" length="50" not-null="true" />
+        </property>
+        <property name="segnombreEmp" type="string">
+            <column name="segnombre_emp" length="50" />
+        </property>
+        <property name="priapellidoEmp" type="string">
+            <column name="priapellido_emp" length="50" not-null="true" />
+        </property>
+        <property name="segapellidoEmp" type="string">
+            <column name="segapellido_emp" length="50" />
+        </property>
+        <property name="fotoEmp" type="string">
+            <column name="foto_emp" length="100" not-null="true" />
+        </property>
+        <property name="nacimientoEmp" type="date">
+            <column name="nacimiento_emp" length="10" not-null="true" />
+        </property>
+        <property name="telefonoEmp" type="string">
+            <column name="telefono_emp" length="15" not-null="true" />
+        </property>
+        <property name="emailEmp" type="string">
+            <column name="email_emp" length="80" not-null="true" />
+        </property>
+        <property name="cargoEmp" type="string">
+            <column name="cargo_emp" length="50" not-null="true" />
+        </property>
+        <property name="sueldoEmp" type="java.lang.Float">
+            <column name="sueldo_emp" precision="12" scale="0" />
+        </property>
+        <property name="estadoEmp" type="string">
+            <column name="estado_emp" length="15" />
+        </property>
+        <set name="usuarios" table="usuario" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_emp" not-null="true" />
+            </key>
+            <one-to-many class="POJO.Usuario" />
+        </set>
+    </class>
+</hibernate-mapping>

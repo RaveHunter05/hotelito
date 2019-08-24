@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-07-2019 11:38:15 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.ServiciosContratados" table="servicios_contratados" catalog="hotelito_prueba" optimistic-lock="version">
+        <composite-id name="id" class="POJO.ServiciosContratadosId">
+            <key-property name="numFact" type="string">
+                <column name="num_fact" length="10" />
+            </key-property>
+            <key-property name="idSer" type="int">
+                <column name="id_ser" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="factura" class="POJO.Factura" update="false" insert="false" fetch="select">
+            <column name="num_fact" length="10" not-null="true" />
+        </many-to-one>
+        <many-to-one name="habitacion" class="POJO.Habitacion" fetch="select">
+            <column name="id_hab" not-null="true" />
+        </many-to-one>
+        <many-to-one name="servicio" class="POJO.Servicio" update="false" insert="false" fetch="select">
+            <column name="id_ser" not-null="true" />
+        </many-to-one>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="cantidad" />
+        </property>
+        <property name="subtotal" type="java.lang.Float">
+            <column name="subtotal" precision="12" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

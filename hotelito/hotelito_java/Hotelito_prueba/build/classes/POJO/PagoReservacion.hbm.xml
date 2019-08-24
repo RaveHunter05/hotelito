@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-07-2019 11:38:15 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.PagoReservacion" table="pago_reservacion" catalog="hotelito_prueba" optimistic-lock="version">
+        <id name="idPago" type="int">
+            <column name="id_pago" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="reservacion" class="POJO.Reservacion" fetch="select">
+            <column name="id_res" not-null="true" />
+        </many-to-one>
+        <property name="fecha" type="date">
+            <column name="fecha" length="10" />
+        </property>
+        <property name="formaPago" type="string">
+            <column name="forma_pago" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hotelito?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">914262145</property>
+    <mapping resource="POJO/Empleado.hbm.xml"/>
+    <mapping resource="POJO/ServiciosContratados.hbm.xml"/>
+    <mapping resource="POJO/Cliente.hbm.xml"/>
+    <mapping resource="POJO/Proveedor.hbm.xml"/>
+    <mapping resource="POJO/PagoEvento.hbm.xml"/>
+    <mapping resource="POJO/Usuario.hbm.xml"/>
+    <mapping resource="POJO/Evento.hbm.xml"/>
+    <mapping resource="POJO/Factura.hbm.xml"/>
+    <mapping resource="POJO/PagoReservacion.hbm.xml"/>
+    <mapping resource="POJO/EventoServicios.hbm.xml"/>
+    <mapping resource="POJO/Reservacion.hbm.xml"/>
+    <mapping resource="POJO/ReservacionHabitaciones.hbm.xml"/>
+    <mapping resource="POJO/Servicio.hbm.xml"/>
+    <mapping resource="POJO/Habitacion.hbm.xml"/>
+    <mapping resource="POJO/Salon.hbm.xml"/>
+    <mapping resource="POJO/Danos.hbm.xml"/>
+    <mapping resource="POJO/Insumo.hbm.xml"/>
+    <mapping resource="POJO/Mueble.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
