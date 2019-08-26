@@ -3,40 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/hotelito/Hotelito.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/hibernate.reveng.xml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/css/login.css</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/controladores/MueblesController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/controladores/IngredientesController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/css/administracion.css</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/css/muebles.css</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/fxml/Servicios.fxml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/controladores/AdministracionController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/fxml/Principal.fxml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/fxml/Reservacion.fxml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/css/proveedores.css</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/css/ingredientes.css</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/fotos/perrito.jpg</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/controladores/LoginController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/fxml/Reportes.fxml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/css/servicios.css</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/POJO/Cliente.java</file>
             <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/controladores/ReservacionController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/css/reservacion.css</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/hibernate.cfg.xml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/fxml/Habitaciones.fxml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/controladores/ProveedoresController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/fxml/Administracion.fxml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/css/reportes.css</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/css/habitaciones.css</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/controladores/PrincipalController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/fxml/Proveedores.fxml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/controladores/ServiciosController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/css/principal.css</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/controladores/ReportesController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/fxml/Muebles.fxml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/controladores/HabitacionesController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/fxml/Ingredientes.fxml</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/hotelito/src/Conection/NewHibernateUtil.java</file>
         </group>
     </open-files>
 </project-private>

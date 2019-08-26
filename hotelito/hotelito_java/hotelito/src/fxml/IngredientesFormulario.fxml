@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.IngredientesFormularioController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="777.0" prefWidth="1024.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@/css/ingredientesformulario.css" />
+          </stylesheets>
+         <children>
+            <Label layoutX="492.0" layoutY="39.0" text="Insumos:" />
+            <TextField fx:id="txtNombre" layoutX="271.0" layoutY="121.0" />
+            <TextField fx:id="txtDescripcion" layoutX="295.0" layoutY="375.0" />
+            <TextField fx:id="txtCantidadTotal" layoutX="777.0" layoutY="386.0" />
+            <TextField fx:id="txtCantidadApedir" layoutX="276.0" layoutY="242.0" />
+            <TextField fx:id="txtFechaPedido" layoutX="754.0" layoutY="124.0" />
+            <TextField fx:id="txtFechaReorden" layoutX="776.0" layoutY="244.0" />
+            <Label layoutX="199.0" layoutY="125.0" text="Nombre:" />
+            <Label layoutX="196.0" layoutY="380.0" text="Descripción:" />
+            <Label layoutX="675.0" layoutY="390.0" text="Cantidad Total:" />
+            <Label layoutX="171.0" layoutY="247.0" text="Cantidad a pedir:" />
+            <Label layoutX="679.0" layoutY="249.0" text="Fecha reorden:" />
+            <Label layoutX="666.0" layoutY="127.0" text="Fecha pedido:" />
+            <Button fx:id="btnPedir" layoutX="370.0" layoutY="547.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Pedir" />
+            <Button fx:id="btnSalir" layoutX="587.0" layoutY="547.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Salir" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

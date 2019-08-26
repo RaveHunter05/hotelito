@@ -15,6 +15,8 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -41,6 +43,12 @@ public class ReportesController implements Initializable {
 //            btnIngredientes 
 //            btnMuebles 
 //            btnServicios btnHabitaciones btnAdministracion btnReportes
+    @FXML
+    private TextField txtBusqueda;
+    @FXML
+    private ComboBox<?> cmbReportes;
+    @FXML
+    private Label refrescar;
                             
             
     
@@ -54,6 +62,10 @@ public class ReportesController implements Initializable {
 
     @FXML
     private void btnBuscar(ActionEvent event) {
+    }
+
+    @FXML
+    private void refrescar(MouseEvent event) {
     }
     
 }

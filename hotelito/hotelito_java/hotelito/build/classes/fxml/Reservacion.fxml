@@ -14,33 +14,39 @@
         <URL value="@/css/reservacion.css" />
     </stylesheets>
    <children>
-      <Label layoutX="162.0" layoutY="98.0" text="Habitaciones" />
-      <TextField layoutX="564.0" layoutY="94.0" />
-      <ComboBox layoutX="325.0" layoutY="94.0" prefWidth="150.0" />
-      <Button layoutX="794.0" layoutY="103.0" mnemonicParsing="false" text="Button" />
-      <Label layoutX="894.0" layoutY="108.0" text="Label" />
-      <Label layoutX="476.0" layoutY="45.0" text="Reservacion" />
-      <TableView layoutX="141.0" layoutY="168.0" prefHeight="246.0" prefWidth="800.0">
+      <Label layoutX="162.0" layoutY="98.0" text="Clasificación:" />
+      <TextField fx:id="txtBusqueda" layoutX="564.0" layoutY="94.0" />
+      <ComboBox fx:id="cmbReservacion" layoutX="325.0" layoutY="94.0" prefWidth="150.0" />
+      <Button fx:id="buscar" layoutX="794.0" layoutY="103.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+      <Label fx:id="refrescar" layoutX="894.0" layoutY="108.0" onMouseClicked="#refrescar" text="Label" />
+      <Label layoutX="476.0" layoutY="45.0" text="Reservación" />
+      <TableView fx:id="tabla1" layoutX="141.0" layoutY="168.0" prefHeight="246.0" prefWidth="800.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn fx:id="idRes" prefWidth="75.0" text="id Reservación" />
+            <TableColumn fx:id="idCliente" prefWidth="100.0" text="id Cliente" />
+            <TableColumn fx:id="fechaEntrada" prefWidth="100.0" text="Fecha entrada" />
+            <TableColumn fx:id="fechaSalida" prefWidth="100.0" text="Fecha salida" />
+            <TableColumn fx:id="cantidadHabitaciones" prefWidth="100.0" text="Cantidad habitaciones" />
+            <TableColumn fx:id="cantidadPersonas" prefWidth="100.0" text="Cantidad personas" />
+            <TableColumn fx:id="estado" prefWidth="100.0" text="Estado" />
+            <TableColumn fx:id="totalReservaciones" prefWidth="100.0" text="Total reservaciones" />
         </columns>
       </TableView>
-      <Button layoutX="223.0" layoutY="422.0" mnemonicParsing="false" text="Nueva reserva" />
-      <Button layoutX="450.0" layoutY="422.0" mnemonicParsing="false" text="Editar reserva" />
-      <Label layoutX="625.0" layoutY="426.0" text="Label" />
-      <Label layoutX="755.0" layoutY="426.0" text="Label" />
-      <TableView layoutX="148.0" layoutY="467.0" prefHeight="210.0" prefWidth="798.0">
+      <Button fx:id="reservaNueva" layoutX="223.0" layoutY="422.0" mnemonicParsing="false" onAction="#nuevaReserva" text="Nueva reserva" />
+      <Button fx:id="reservaEditar" layoutX="450.0" layoutY="422.0" mnemonicParsing="false" onAction="#editarReserva" text="Editar reserva" />
+      <Label fx:id="enviar" layoutX="625.0" layoutY="426.0" onMouseClicked="#enviar" text="Label" />
+      <Label fx:id="refrescar2" layoutX="755.0" layoutY="426.0" onMouseClicked="#refrescar2" text="Label" />
+      <TableView fx:id="tabla2" layoutX="148.0" layoutY="467.0" prefHeight="210.0" prefWidth="798.0">
         <columns>
           <TableColumn prefWidth="75.0" text="C1" />
           <TableColumn prefWidth="75.0" text="C2" />
         </columns>
       </TableView>
       <Label layoutX="186.0" layoutY="718.0" text="Subtotal" />
-      <TextField layoutX="256.0" layoutY="714.0" />
+      <TextField fx:id="txtSubTotal" layoutX="256.0" layoutY="714.0" />
       <Label layoutX="448.0" layoutY="720.0" text="IVA" />
-      <TextField layoutX="518.0" layoutY="716.0" />
+      <TextField fx:id="txtIVA" layoutX="518.0" layoutY="716.0" />
       <Label layoutX="698.0" layoutY="720.0" text="Total" />
-      <TextField layoutX="768.0" layoutY="716.0" />
+      <TextField fx:id="txtTotal" layoutX="768.0" layoutY="716.0" />
    </children>
 </AnchorPane>

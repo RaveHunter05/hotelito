@@ -21,7 +21,7 @@
       <DatePicker fx:id="dpHasta" layoutX="471.0" layoutY="130.0" />
       <Label layoutX="108.0" layoutY="136.0" text="Desde" />
       <Label layoutX="406.0" layoutY="136.0" text="Hasta" />
-      <Button fx:id="btnBuscar" layoutX="467.0" layoutY="204.0" mnemonicParsing="false" onAction="#btnBuscar" text="Button" />
+      <Button fx:id="btnBuscar" layoutX="467.0" layoutY="204.0" mnemonicParsing="false" onAction="#btnBuscar" text="Buscar" />
       <Label fx:id="lbPDF" layoutX="573.0" layoutY="208.0" text="Label" />
       <TableView fx:id="tvReportes" layoutX="99.0" layoutY="278.0" prefHeight="316.0" prefWidth="830.0">
         <columns>
@@ -30,8 +30,8 @@
         </columns>
       </TableView>
       <Label layoutX="915.0" layoutY="136.0" text="Label" />
-      <TextField layoutX="290.0" layoutY="204.0" />
-      <ComboBox layoutX="117.0" layoutY="204.0" prefWidth="150.0" />
-      <Label layoutX="659.0" layoutY="208.0" text="Label" />
+      <TextField fx:id="txtBusqueda" layoutX="290.0" layoutY="204.0" />
+      <ComboBox fx:id="cmbReportes" layoutX="117.0" layoutY="204.0" prefWidth="150.0" />
+      <Label fx:id="refrescar" layoutX="659.0" layoutY="208.0" onMouseClicked="#refrescar" text="Label" />
    </children>
 </AnchorPane>
