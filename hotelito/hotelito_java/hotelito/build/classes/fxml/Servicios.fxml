@@ -14,23 +14,27 @@
         <URL value="@/css/servicios.css" />
     </stylesheets>
    <children>
-      <Label layoutX="152.0" layoutY="88.0" text="Habitaciones" />
-      <TextField layoutX="554.0" layoutY="84.0" />
-      <ComboBox layoutX="315.0" layoutY="84.0" prefWidth="150.0" />
-      <Button layoutX="784.0" layoutY="93.0" mnemonicParsing="false" text="Button" />
-      <Label layoutX="884.0" layoutY="98.0" text="Label" />
-      <Label layoutX="466.0" layoutY="35.0" text="Reservacion" />
-      <TableView layoutX="131.0" layoutY="158.0" prefHeight="246.0" prefWidth="800.0">
+      <Label layoutX="152.0" layoutY="88.0" text="Clasificación:" />
+      <TextField fx:id="txtBusqueda" layoutX="554.0" layoutY="84.0" />
+      <ComboBox fx:id="cmServicio" layoutX="315.0" layoutY="84.0" prefWidth="150.0" />
+      <Button fx:id="buscar" layoutX="784.0" layoutY="93.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+      <Label fx:id="refrescar" layoutX="884.0" layoutY="98.0" onMouseClicked="#refrescar" text="Label" />
+      <Label layoutX="485.0" layoutY="35.0" text="Servicios" />
+      <TableView fx:id="tabla1" layoutX="131.0" layoutY="158.0" prefHeight="246.0" prefWidth="800.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="C1" />
-            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn fx:id="idSer" prefWidth="133.0" text="Id servicio" />
+            <TableColumn fx:id="nombreSer" prefWidth="133.0" text="Nombre" />
+            <TableColumn fx:id="tipoSer" prefWidth="133.0" text="Tipo" />
+            <TableColumn fx:id="descripcionSer" prefWidth="133.0" text="Descripción" />
+            <TableColumn fx:id="precioSer" prefWidth="133.0" text="Precio" />
+            <TableColumn fx:id="estadoSer" prefWidth="133.0" text="Estado" />
          </columns>
       </TableView>
-      <Button layoutX="213.0" layoutY="412.0" mnemonicParsing="false" text="Nueva reserva" />
-      <Button layoutX="440.0" layoutY="412.0" mnemonicParsing="false" text="Editar reserva" />
-      <Label layoutX="615.0" layoutY="416.0" text="Label" />
-      <Label layoutX="745.0" layoutY="416.0" text="Label" />
-      <TableView layoutX="138.0" layoutY="457.0" prefHeight="210.0" prefWidth="798.0">
+      <Button fx:id="servicioNuevo" layoutX="213.0" layoutY="412.0" mnemonicParsing="false" onAction="#nuevoServicio" text="Nuevo servicio" />
+      <Button fx:id="servicioEditar" layoutX="440.0" layoutY="412.0" mnemonicParsing="false" onAction="#editarServicio" text="Editar servicio" />
+      <Label fx:id="enviar" layoutX="615.0" layoutY="416.0" onMouseClicked="#enviar" text="Label" />
+      <Label fx:id="refrescar2" layoutX="745.0" layoutY="416.0" onMouseClicked="#refrescar2" text="Label" />
+      <TableView fx:id="tabla2" layoutX="138.0" layoutY="457.0" prefHeight="210.0" prefWidth="798.0">
          <columns>
             <TableColumn prefWidth="75.0" text="C1" />
             <TableColumn prefWidth="75.0" text="C2" />

@@ -24,12 +24,12 @@
                <children>
                   <VBox layoutX="79.0" layoutY="179.0" prefHeight="290.0" prefWidth="258.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Button fx:id="button1" alignment="CENTER" mnemonicParsing="false" onAction="#BUTON1" prefHeight="88.0" prefWidth="270.0" text="Reservacion">
+                        <Button fx:id="button1" alignment="CENTER" mnemonicParsing="false" onAction="#BUTON1" prefHeight="88.0" prefWidth="270.0" text="Reservación">
                            <graphic>
                               <Label id="cono" fx:id="cono" />
                            </graphic>
                         </Button>
-                        <Button fx:id="button2" mnemonicParsing="false" onAction="#INSUMOS" prefHeight="88.0" prefWidth="270.0" text="Insumos">
+                        <Button fx:id="button2" mnemonicParsing="false" onAction="#INSUMOS" prefHeight="88.0" prefWidth="270.0" text="Proveedor">
                            <graphic>
                               <Label id="cono" fx:id="cono1" />
                            </graphic>
@@ -54,7 +54,7 @@
                               <Label id="cono" fx:id="cono5" />
                            </graphic>
                         </Button>
-                        <Button fx:id="button7" mnemonicParsing="false" onAction="#ADMINISTRACION" prefHeight="88.0" prefWidth="270.0" text="Administracion">
+                        <Button fx:id="button7" mnemonicParsing="false" onAction="#ADMINISTRACION" prefHeight="88.0" prefWidth="270.0" text="Administración">
                            <graphic>
                               <Label id="cono" fx:id="cono6" />
                            </graphic>

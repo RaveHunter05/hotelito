@@ -15,18 +15,22 @@
     </stylesheets>
    <children>
       <Label layoutX="482.0" layoutY="36.0" text="Lista de proveedores" />
-      <Label layoutX="150.0" layoutY="86.0" text="Habitaciones" />
-      <ComboBox layoutX="323.0" layoutY="82.0" prefWidth="150.0" />
-      <TextField layoutX="557.0" layoutY="82.0" />
-      <Button layoutX="752.0" layoutY="82.0" mnemonicParsing="false" text="Button" />
-      <Label layoutX="864.0" layoutY="86.0" text="Label" />
-      <Button layoutX="176.0" layoutY="148.0" mnemonicParsing="false" text="Nuevo proveedor" />
-      <Button layoutX="455.0" layoutY="150.0" mnemonicParsing="false" text="Editar proveedor" />
-      <Button layoutX="729.0" layoutY="150.0" mnemonicParsing="false" text="Deshabilitar" />
-      <TableView layoutX="115.0" layoutY="216.0" prefHeight="514.0" prefWidth="808.0">
+      <Label layoutX="150.0" layoutY="86.0" text="Clasificación:" />
+      <ComboBox fx:id="cmbProveedores" layoutX="323.0" layoutY="82.0" prefWidth="150.0" />
+      <TextField fx:id="txtBusqueda" layoutX="557.0" layoutY="82.0" />
+      <Button fx:id="buscar" layoutX="752.0" layoutY="82.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+      <Label fx:id="refrescar" layoutX="864.0" layoutY="86.0" onMouseClicked="#refrescar" text="Label" />
+      <Button fx:id="proveedorNuevo" layoutX="176.0" layoutY="148.0" mnemonicParsing="false" onAction="#nuevoProveedor" text="Nuevo proveedor" />
+      <Button fx:id="proveedorEditar" layoutX="455.0" layoutY="150.0" mnemonicParsing="false" onAction="#editarProveedor" text="Editar proveedor" />
+      <Button fx:id="deshabilitar" layoutX="729.0" layoutY="150.0" mnemonicParsing="false" onAction="#deshabilitar" text="Deshabilitar" />
+      <TableView fx:id="table1" layoutX="115.0" layoutY="216.0" prefHeight="514.0" prefWidth="808.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="idPro" prefWidth="135.0" text="Id" />
+          <TableColumn fx:id="rucPro" prefWidth="135.0" text="RUC" />
+            <TableColumn fx:id="nombrePro" prefWidth="135.0" text="Nombre" />
+            <TableColumn fx:id="direccionPro" prefWidth="135.0" text="Dirección" />
+            <TableColumn fx:id="telefonoEmp" prefWidth="135.0" text="Telefono" />
+            <TableColumn fx:id="emailEmp" prefWidth="135.0" text="E-mail" />
         </columns>
       </TableView>
    </children>

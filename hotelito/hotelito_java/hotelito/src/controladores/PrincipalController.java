@@ -147,7 +147,7 @@ public class PrincipalController implements Initializable {
 
     @FXML
     private void MUEBLES(ActionEvent event) throws IOException {
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Reservacion.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("/fxml/Muebles.fxml"));
         panelDerecha.getChildren().setAll(pane);
     }
 
