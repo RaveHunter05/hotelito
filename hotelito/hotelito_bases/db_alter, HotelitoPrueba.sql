@@ -1,0 +1,19 @@
+	
+ALTER TABLE danos MODIFY subtotal double;
+ALTER TABLE empleado MODIFY sueldo_emp double;
+ALTER TABLE evento MODIFY costo_servicios double;
+ALTER TABLE evento MODIFY subtotal double;
+ALTER TABLE evento MODIFY total double;
+ALTER TABLE evento_servicios MODIFY subtotal double;
+ALTER TABLE factura MODIFY costo_servicios double;
+ALTER TABLE factura MODIFY costo_danos double;
+ALTER TABLE factura MODIFY subtototal double;
+ALTER TABLE factura MODIFY total_fact double;
+ALTER TABLE habitacion MODIFY precio_hab double;
+ALTER TABLE insumo MODIFY cantidad_a_pedir double;
+ALTER TABLE mueble MODIFY precio_mue double;
+ALTER TABLE reservacion MODIFY total_res double;
+ALTER TABLE reservacion_habitaciones MODIFY subtotal double;
+ALTER TABLE salon MODIFY costo double;
+ALTER TABLE servicio MODIFY precio_ser double;
+ALTER TABLE servicios_contratados MODIFY subtotal double;
